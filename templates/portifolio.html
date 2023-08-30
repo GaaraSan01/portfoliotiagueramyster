@@ -1,0 +1,44 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block adicionalcss %}
+    <link rel="stylesheet" href="{% static 'styles/portifolio.css' %}">
+{% endblock %}
+{% block content %}
+    <main>
+        <section class="projects" id="projetos">
+            <div class="tab-links">
+                <a href="{% url 'filtro' 'MOBILE' %}">
+                    <img src="{% static 'icons/Vectormobile.svg' %}" alt="mobile">
+                    App Mobile
+                </a>
+                <a href="{% url 'filtro' 'SITES' %}">
+                    <img src="{% static 'icons/Vectordesktop.svg' %}" alt="mobile">
+                    Sites
+                </a>
+                <a href="{% url 'filtro' 'LANGIN_PAGES' %}">
+                    <img src="{% static 'icons/Vectorlandingpages.svg' %}" alt="mobile">
+                    Landing Pages
+                </a>
+            </div>
+            <div class="container">
+                <ul class="content-cards">
+                    {% if cards %}
+                    {% for card in cards %}
+                    <li>
+                        <div class="card">
+                            <img src="{{ card.image.url }}" alt="{{ card.title }}">
+                            <div class="copy_project">
+                                <h2>{{ card.title }}</h2>
+                                <a href="{% url 'projeto' project_id=card.id %}">Quero ver mais</a>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                    {% else %}
+                        <h2 style="color: white; text-align: center; font-size: 5rem;">Em breve</h2>
+                    {% endif %}
+                </ul>
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,72 @@
+
+header, nav {
+    background: transparent;
+}
+
+body {
+    height: auto;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.container {
+    height: auto;
+    width: 70%;
+    margin: 75px auto;
+    background: url('../img/Imgfundo_sobre.png') no-repeat center/cover;
+}
+
+.copy_sobre {
+    border-radius: 20px;
+    background: rgba(199, 199, 199, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 60px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy_sobre p {
+    color: #FFF;
+
+    /* Headline/H4 */
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.download_cv {
+    font-weight: 600;
+    color: white;
+    padding: 10px 45px 10px 45px;
+    background: var(--button-linear);
+    border-radius: 10px;
+    background-size: 200%;
+    transition: all .3s ease-in-out;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.473);
+    font-size: 1.5rem;
+}:focus{
+    outline: none;
+}
+
+.download_cv:hover{
+    background-position: right;
+    cursor: pointer;
+}
+
+@media(max-width: 960px){
+    .container{
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,21 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block adicionalcss %}
+    <link rel="stylesheet" href="{% static 'styles/sobre.css' %}">
+{% endblock %}
+{% block content %}
+    <main>
+        <section class="container">
+            <div class="copy_sobre">
+                <p>
+                    Atualmente estudo designer de interface, crio experiências cativantes ao usuário, 
+                    acredito no poder do designer para melhorar a vida das pessoas. Como designer de interface, 
+                    trabalho com elementos visuais e interativos para criar interfaces intuitivas e fáceis de usar.  
+                    Meu objetivo é tornar a interação do usuário com o produto ou serviço o mais agradável e eficiente possível.
+                </p>
+                <button class="download_cv" id="download_cv">Baixar CV</button>
+            </div>
+        </section>
+    </main>
+    <script src="{% static 'scripts/main.js' %}"></script>
+{% endblock %}

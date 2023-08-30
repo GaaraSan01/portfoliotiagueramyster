@@ -1,0 +1,38 @@
+{% load static %}
+<header>
+    <nav>
+        <div class="logotipo">
+            <div class="icons-voltar">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'icons/arrow-left.svg' %}" alt="">
+                </a>
+            </div>
+            <p>Tiaguera Myster</p>
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'projetos' %}" {% if current_page == 'projetos' %}class="active"{% endif %}>Trabalhos</a>
+            <p>/</p>
+            <a href="{% url 'sobre' %}" {% if current_page == 'sobre' %}class="active"{% endif %}>Sobre</a>
+        </div>
+    </nav>
+    {% if current_page == 'projetos' %}
+    <section class="title-header">
+        <h1>UI & UX designer</h1>
+        <div class="up">
+            <a href="#projetos">
+                <img src="{% static 'icons/arrow-up.svg' %}" alt="Ver mais">
+            </a>
+        </div>
+    </section>
+    {% endif %}
+    {% if filtro_um == 'projetos/SITES' %}
+    <section class="title-header">
+        <h1>UI & UX designer</h1>
+        <div class="up">
+            <a href="#projetos">
+                <img src="{% static 'icons/arrow-up.svg' %}" alt="Ver mais">
+            </a>
+        </div>
+    </section>
+    {% endif %}
+</header>

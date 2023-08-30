@@ -1,0 +1,45 @@
+{% extends 'shared/base_index.html' %}
+{% load static %}
+{% block content %}
+  <main>
+    <section class="container">
+      <div class="avatar">
+        <img src="{% static 'img/avatar.png' %}" alt="Tiago Feliphe | UX & UI Designer" title="Tiago F.">
+      </div>
+      <div class="container__copy">
+        <h1>Meu portifólio</h1>
+        <p>
+          Bem-vindo ao meu portfólio de design de interface de usuário (UI) e 
+          experiência do usuário (UX)! Aqui você encontrará uma seleção cuidadosamente curada 
+          dos meus trabalhos mais recentes e desafiadores como designer.
+        </p>
+        <a href="{% url 'projetos' %}" class="button-iniciar">Iniciar</a>
+        
+        <div class="social__icons">
+          <ul class="content__social">
+            <li>
+              <a href="https://www.figma.com/@tiagofeliphe" target="_blank">
+                <i><img src="{% static 'icons/figma.svg' %}" alt="Figma" title="Figma"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://br.pinterest.com/tiagueira0081/" target="_blank">
+                <i><img src="{% static 'icons/pinterest.svg' %}" alt="Pinterest" title="Pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/tiago.f.machado/" target="_blank">
+                <i><img src="{% static 'icons/instagram.svg' %}" alt="Instagram" title="Instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/tiagofeliphe" target="_blank">
+                <i><img src="{% static 'icons/bahance.svg' %}" alt="Behance" title="Behance"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

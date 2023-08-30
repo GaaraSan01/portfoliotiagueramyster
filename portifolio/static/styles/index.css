@@ -1,0 +1,128 @@
+body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: auto;
+    align-items: center;
+}
+
+.container__copy {
+    color: white;
+}
+
+.container__copy h1 {
+    font-size: 6rem;
+    margin-bottom: 60px;
+}
+
+.container__copy p {
+    text-align: justify;
+    font-size: 2rem;
+    opacity: 0.78;
+    margin-bottom: 60px;
+}
+
+.button-iniciar {
+    height: 50px;
+    width: 100%;
+    padding-left: 8px;
+    outline: none;
+    position: relative;
+    background: var(--button-linear);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-size: 200%;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.container__copy a:hover{
+    background-position: right;
+    transform: scale(1.02);
+}
+
+.social__icons {
+    min-width: 100%;
+    margin-top: 50px;
+}
+
+.content__social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.content__social li {
+    transition: all .3s ease-in;
+}
+
+.content__social li:hover {
+    transform: scale(1.2);
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 960px){
+    .container {
+        max-width: 768px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .avatar img{
+        width: 80%;
+        height: auto;
+    }
+
+    .container__copy h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .container__copy p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .button-iniciar {
+        font-size: 1.5rem;
+        height: 40px;
+    }
+
+    .social__icons {
+        margin-top: 30px;
+    }
+    .content__social li{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px){
+    .avatar img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media(max-width: 414px){
+    .avatar img{
+        width: 70%;
+        height: auto;
+    }
+    .content__social li i img {
+        width: 70%;
+    }
+}
