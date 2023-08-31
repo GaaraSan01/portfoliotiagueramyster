@@ -123,6 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+FAVICON_URL = '/static/icons/favicon.ico'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portifolio/static')
