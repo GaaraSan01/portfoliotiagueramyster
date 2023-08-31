@@ -1,23 +1,21 @@
+
 header, nav {
     background: transparent;
 }
 
 body {
-    background: url(../img/Imgfundo_sobre.png) no-repeat center/cover;
-    background-size: 75%;
-    background-position: 40% -62%;
     height: auto;
 }
 
 main {
     min-height: 70vh;
-    background: transparent;
 }
 
 .container {
     height: auto;
-    max-width: 70%;
+    width: 70%;
     margin: 75px auto;
+    background: url('../img/Imgfundo_sobre.png') no-repeat center/cover;
 }
 
 .copy_sobre {
@@ -34,7 +32,6 @@ main {
 
 .copy_sobre p {
     color: #FFF;
-    text-align: justify;
 
     /* Headline/H4 */
     font-family: Inter;
@@ -56,6 +53,7 @@ main {
     border: none;
     margin-top: 20px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.473);
+    font-size: 1.5rem;
 }:focus{
     outline: none;
 }
@@ -63,4 +61,12 @@ main {
 .download_cv:hover{
     background-position: right;
     cursor: pointer;
+}
+
+@media(max-width: 960px){
+    .container{
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+    }
 }

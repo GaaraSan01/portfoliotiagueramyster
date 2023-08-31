@@ -36,7 +36,7 @@ class SliderProjects{
         })
         button_right.addEventListener('click', () => {
             this.ocultImg()
-            itemList = (itemList + 1) % ArrayList.length
+            itemList = (itemList - 1 + ArrayList.length) % ArrayList.length
             radios[itemList].click()
         })
 

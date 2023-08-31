@@ -1,16 +1,21 @@
+html, body {
+    overflow-x: hidden;
+}
 .container_project {
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 75px;
 }
 
 .container_project h1 {
     color: white;
     text-align: center;
     font-family: Inter;
-    font-size: 60px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -18,7 +23,8 @@
 
 .container_project h1::after{
     content: "";
-    width: 600px;
+    position: relative;
+    width: 150%;
     height: 7px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -26,17 +32,17 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     display: block;
     margin-bottom: 50px;
+    left: -6rem;
 }
 
 .img_slider {
-    height: 600px;
-    max-width: 400px;
+    height: auto;
+    max-width: 700px;
 }
 
 .img_slider img {
-    height: 100%;
     width: 100%;
-}
+} 
 
 .navigaton_slider {
     margin: auto;
@@ -63,11 +69,13 @@
 }
 
 .copy_project {
-    height: 30vh;
+    height: auto;
     color: white;
     text-align: justify;
     max-width: 700px;
     margin: auto;
+    padding: 0 20px;
+    font-size: 2rem;
 }
 
 button{
@@ -78,4 +86,9 @@ button{
 
 button:focus{
     outline: none;
+}
+@media(max-width: 960px){
+    .container_project h1{
+        font-size: 3rem;
+    }
 }
