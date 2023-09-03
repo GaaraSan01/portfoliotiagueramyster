@@ -165,7 +165,5 @@ header {
     .tab-links a {
         font-size: 1rem;
     }
-    .icons-voltar {
-        transform: scale(.8);
-    }
+    
 }

@@ -241,4 +241,7 @@ footer {
     nav > div {
         font-size: 3rem;
     }
+    .icons-voltar {
+        transform: scale(.8);
+    }
 }
