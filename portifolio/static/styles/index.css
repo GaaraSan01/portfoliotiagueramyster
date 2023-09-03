@@ -2,7 +2,7 @@ body main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 90vh;
 }
 
 .container {
@@ -81,6 +81,7 @@ body main {
         max-width: 768px;
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 75px 20px;
     }
     .avatar img{
         width: 80%;
