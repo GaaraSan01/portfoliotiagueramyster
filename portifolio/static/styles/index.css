@@ -119,6 +119,9 @@ body main {
 }
 
 @media(max-width: 414px){
+    .container{
+        padding: 75px 20px;
+    }
     .avatar img{
         width: 70%;
         height: auto;
