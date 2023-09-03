@@ -22,6 +22,10 @@ html, body {
     height: auto;
     background: black;
     scroll-behavior: smooth;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 /*HEADER*/
