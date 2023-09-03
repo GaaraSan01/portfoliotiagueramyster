@@ -42,7 +42,8 @@ html, body {
 
 .img_slider img {
     width: 100%;
-} 
+    border-radius: 30px;
+}
 
 .navigaton_slider {
     margin: auto;

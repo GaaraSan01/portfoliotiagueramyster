@@ -54,6 +54,7 @@ main {
     margin-top: 20px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.473);
     font-size: 1.5rem;
+    text-decoration: none;
 }:focus{
     outline: none;
 }
