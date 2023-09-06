@@ -22,7 +22,7 @@ class Projects(models.Model):
 
 class ImageFieldsProject(models.Model):
     project = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField('project',upload_to='image')
+    image = models.ImageField('project',upload_to='image/%Y/%m/%d/d')
 
     def __str__(self):
         return f'Imagem do projeto "{self.project}" adicionada com sucesso!'
