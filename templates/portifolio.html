@@ -26,7 +26,9 @@
                     {% for card in cards %}
                     <li>
                         <div class="card">
-                            <img src="{{ card.image.url }}" alt="{{ card.title }}">
+                            {% if card.image %}
+                                <img src="{{ card.image.url }}" alt="{{ card.title }}">
+                            {% endif %}
                             <div class="copy_project">
                                 <h2>{{ card.title }}</h2>
                                 <a href="{% url 'projeto' project_id=card.id %}">Quero ver mais</a>
